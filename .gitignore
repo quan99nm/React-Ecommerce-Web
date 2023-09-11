@@ -7,9 +7,16 @@
 
 # testing
 /coverage
-
+# Editor files
+.vscode/
+.idea/
 # production
 /build
+# Dependency directories
+.pnp/
+.pnp.js
+# Log files
+*.log
 
 # misc
 .DS_Store
