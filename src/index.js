@@ -9,6 +9,9 @@ import "font-awesome/css/font-awesome.min.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { useFormik } from "formik";
+import * as Yup from "yup"
+
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -30,7 +33,18 @@ root.render(
             style={{ height: "2px" }}
           />
         </div>
-        <ToastContainer position="top-right" autoClose={5000} />
+        <ToastContainer 
+        position="top-right" 
+        autoClose={5000} 
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        />
         <App />
       </BrowserRouter>
     </PersistGate>
