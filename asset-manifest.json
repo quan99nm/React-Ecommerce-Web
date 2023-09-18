@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Ecommerce-Web/static/css/main.4338fab2.css",
+    "main.js": "/React-Ecommerce-Web/static/js/main.56d78510.js",
+    "static/js/787.dcc73137.chunk.js": "/React-Ecommerce-Web/static/js/787.dcc73137.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/React-Ecommerce-Web/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/React-Ecommerce-Web/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/React-Ecommerce-Web/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/bootstrap-icons.woff?": "/React-Ecommerce-Web/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/React-Ecommerce-Web/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/React-Ecommerce-Web/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/React-Ecommerce-Web/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/React-Ecommerce-Web/index.html",
+    "main.4338fab2.css.map": "/React-Ecommerce-Web/static/css/main.4338fab2.css.map",
+    "main.56d78510.js.map": "/React-Ecommerce-Web/static/js/main.56d78510.js.map",
+    "787.dcc73137.chunk.js.map": "/React-Ecommerce-Web/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4338fab2.css",
+    "static/js/main.56d78510.js"
+  ]
+}
