@@ -2,7 +2,7 @@ import axios from "axios";
 import store from "../store/index";
 import { hideLoading, showLoading } from "react-redux-loading-bar";
 const url = {
-  baseUrl: "http://127.0.0.1:8000",
+  baseUrl: "http://52.65.135.109",
   products: "/api/products",
   categories: "/api/categories",
   orders: "/api/orders",
