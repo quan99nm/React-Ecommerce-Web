@@ -1,7 +1,12 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { logout } from "../store/reducers/auth";
 const Header = (props) => {
+  const state = useSelector((state) => state.cart);
+  const user = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="py-3">
       <Container>
@@ -17,7 +22,7 @@ const Header = (props) => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/product" className="nav-link">
+              <Nav.Link as={NavLink} to="/products" className="nav-link">
                 Products
               </Nav.Link>
             </Nav.Item>
@@ -33,24 +38,46 @@ const Header = (props) => {
             </Nav.Item>
           </Nav>
           <Nav className="buttons ">
-            <Button
-              as={NavLink}
-              to="/login"
-              variant="secondary"
-              className="m-2"
-            >
-              <i class="bi bi-box-arrow-left"></i> Login
-            </Button>
-            <Button
-              as={NavLink}
-              to="/register"
-              variant="secondary"
-              className="m-2"
-            >
-              <i class="bi bi-r-circle"></i> Register
-            </Button>
+            {user.isLoggedIn ? (
+              <>
+                <Button
+                  variant="secondary"
+                  className="m-2"
+                  onClick={() => dispatch(logout())}
+                >
+                  <i className="bi bi-box-arrow-left"></i> Logout
+                </Button>
+                <Button
+                  as={NavLink}
+                  to="/register"
+                  variant="secondary"
+                  className="m-2"
+                >
+                  <i className="bi bi-r-circle"></i> Order
+                </Button>
+              </>
+            ) : (
+              <>
+                <Button
+                  as={NavLink}
+                  to="/login"
+                  variant="secondary"
+                  className="m-2"
+                >
+                  <i className="bi bi-box-arrow-left"></i> Login
+                </Button>
+                <Button
+                  as={NavLink}
+                  to="/register"
+                  variant="secondary"
+                  className="m-2"
+                >
+                  <i className="bi bi-r-circle"></i> Register
+                </Button>
+              </>
+            )}
             <Button as={NavLink} to="/cart" variant="secondary" className="m-2">
-              <i class="bi bi-cart"></i> Cart ({1})
+              <i className="bi bi-cart"></i> Cart ({state.items.length})
             </Button>
           </Nav>
         </Navbar.Collapse>

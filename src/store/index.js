@@ -8,11 +8,14 @@ import {
   initMessageListener,
 } from "redux-state-sync";
 import { loadingBarReducer } from "react-redux-loading-bar";
+import cartReducer from "./reducers/handleCart";
 
 const authPersistConfig = { key: "auth", storage };
+const cartPersistConfig = { key: "cart", storage };
 const rootReducer = combineReducers({
   auth: persistReducer(authPersistConfig, authReducer),
   loadingBar: loadingBarReducer,
+  cart: persistReducer(cartPersistConfig, cartReducer),
 });
 
 const syncConfig = {

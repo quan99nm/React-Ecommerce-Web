@@ -37,3 +37,31 @@
     transform: rotate(360deg);
   }
 }
+
+.decription-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Display up to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.title-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* Display up to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.custom-modal {
+  max-width: 80%;
+  /* Adjust the width as needed */
+  margin: 0 auto;
+  /* Center the modal horizontally */
+}
+
+.checkout-modal {
+  max-width: 80%;
+  margin: 0 auto;
+}
